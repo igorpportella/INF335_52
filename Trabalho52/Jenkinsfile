@@ -4,6 +4,7 @@ pipeline {
     stage("build") {
       steps {
         sh """
+          cd Trabalho52;
           docker build -t Trabalho52 .
         """
       }
